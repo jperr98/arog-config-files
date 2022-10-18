@@ -1,7 +1,7 @@
 ---
 spec_version: '1.0'
 indicators:
-  percentile_90: last_over_time(locust_FAKE_90th_percentile{job="$SERVICE-$PROJECT-$STAGE"}[30m])
-  total_requests: last_over_time(locust_FAKE_total_requests{job="$SERVICE-$PROJECT-$STAGE"}[30m])
-  total_failures: last_over_time(locust_FAKE_total_failures{job="$SERVICE-$PROJECT-$STAGE"}[30m])  
-  rps: last_over_time(locust_FAKE_requests_per_second{job="$SERVICE-$PROJECT-$STAGE"}[30m])
+  percentile_90: last_over_time(locust_90th_percentile{job="$SERVICE-$PROJECT-$STAGE"}[30m])
+  total_requests: last_over_time(locust_total_requests{job="$SERVICE-$PROJECT-$STAGE"}[30m])
+  total_failures: last_over_time(locust_total_failures{job="$SERVICE-$PROJECT-$STAGE"}[30m])  
+  rps: last_over_time(locust_requests_per_second{job="$SERVICE-$PROJECT-$STAGE"}[30m])
